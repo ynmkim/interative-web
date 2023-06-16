@@ -1,0 +1,45 @@
+.wrap {
+  min-width: 320px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+h1 {
+  margin-bottom: 20px;
+}
+.tab__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tab__item {
+  padding: 12px 0;
+  flex: 1 1 0;
+  text-align: center;
+  cursor: pointer;
+}
+.tab__item[aria-selected="true"] {
+  color: #06c755;
+  font-weight: bold;
+  border-bottom: 2px solid #06c755;
+}
+.card__img {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.card__title {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #06c755;
+  color: #fff;
+  text-align: center;
+}

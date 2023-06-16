@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tab accessibility and interation</title>
+  <link rel="stylesheet" href="../common.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>tab</h1>
+    <div class="tab">
+      <ul class="tab__list" role="tablist">
+        <li class="tab__item" role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0">
+          First Tab
+        </li>
+        <li class="tab__item" role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1">
+          Second Tab
+        </li>
+        <li class="tab__item" role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" tabindex="-1">
+          Third Tab
+        </li>
+      </ul>
+      <div class="tab__panel" id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+        <div class="card">
+          <img src="/img/image__dummy.jpg" class="card__img" alt="">
+          <div class="card__body">
+            <h5 class="card__title">Card title 1</h5>
+            <p class="card__text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="tab__panel" id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" hidden>
+        <div class="card">
+          <img src="/img/image__dummy.jpg" class="card__img" alt="">
+          <div class="card__body">
+            <h5 class="card__title">Card title 2</h5>
+            <p class="card__text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="tab__panel" id="panel-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" hidden>
+        <div class="card">
+          <img src="/img/image__dummy.jpg" class="card__img" alt="">
+          <div class="card__body">
+            <h5 class="card__title">Card title 3</h5>
+            <p class="card__text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
